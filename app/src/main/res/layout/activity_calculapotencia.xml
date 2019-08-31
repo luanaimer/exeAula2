@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculapotenciaActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tTpCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular potência:"
+        android:textSize="10dp"/>
+
+    <Switch
+        android:id="@+id/sCaculaPotencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:onClick="alteraCalculo"/>
+
+    <TextView
+        android:id="@+id/tValorUm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltagem:" />
+
+    <EditText
+        android:id="@+id/edValorUm"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/tValorDois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amperagem:" />
+
+    <EditText
+        android:id="@+id/edValorDois"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/bntCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:onClick="calcular"/>
+
+    <TextView
+        android:id="@+id/tTpResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Potência: "/>
+
+    <TextView
+        android:id="@+id/tResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0,0"/>
+
+</LinearLayout>
